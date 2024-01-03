@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    #balance {
+      width: 60%;
+      /* Adjusted width for balance input */
+    }
+
+    #ind {
+      resize: vertical;
+    }
+
+    #img {
+      display: none;
+    }
+
+    #imglab {
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    #drinksters {
+      vertical-align: top;
+    }
+
+    #right {
+      margin-top: 10px;
+    }
+
+    input[type="button"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+      background-color: #45a049;
+    }
+
+    a {
+      color: #4CAF50;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Sign In for <strong><a href="https://youtu.be/A9nvxjUi7Mo?si=lQfkGrSQrZMxq6j_&t=10"
+        target="_blank">RUGS</a></strong> &copy;</h1>
+
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td>
+        <input type="text" name="name">
+      </td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><input type="number" min="15" max="110"></td>
+    </tr>
+
+    <tr>
+      <td>Race:</td>
+      <td>
+        <select name="color" id="color">
+          <option value="ok" selected="selected">Normal</option>
+          <option value="!ok"> KFC enjoyer</option>
+          <option value="!ok"> no foreskin & love money</option>
+          <option value="!ok">calculator</option>
+          <option value="!ok">bomber</option>
+          <option value="!ok">taco drug</option>
+          <option value="!ok">microsoft scammer</option>
+          <option value="!ok">noob balkan & rush b idiot</option>
+          <option value="ok">Formula 1</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr id="drinksters">
+      <td>Favorite drinksters:</td>
+      <td>
+        <input type="checkbox" id="h2o" checked>
+        <label for="h2o">Water</label>
+
+        <input type="checkbox" id="coca">
+        <label for="coca">Coca-Cola</label>
+
+        <input type="checkbox" id="vergi">
+        <label for="vergi">Vodka</label>
+
+        <input type="checkbox" id="long">
+        <label for="long">Londrink</label>
+
+        <input type="checkbox" id="milk" onclick="alert('matrix')">
+        <label for="milk">Milk</label>
+
+        <input type="checkbox" id="bier">
+        <label for="bier">Beer</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Home address:</td>
+      <td><input type="text" placeholder="(we don't stalk, but be careful if you did something wrong)"></td>
+    </tr>
+
+    <tr>
+      <td>Bank balance:</td>
+      <td><input type="number" id="balance" placeholder="(We won't rob you)"></td>
+    </tr>
+
+    <tr>
+      <td>Introduce yourself:</td>
+      <td><textarea name="introduce" id="ind" cols="30" rows="10" placeholder="I can't write(default)"></textarea></td>
+    </tr>
+
+    <tr>
+      <td>Good selfie:</td>
+      <td>
+        <label for="img" id="imglab">
+          <div>Select image</div>
+        </label>
+        <input type="file" id="img">
+      </td>
+    </tr>
+  </table>
+
+  <input type="checkbox" checked id="right">
+  <label for="right">I've read the <a href="policy.txt" target="_blank">RUGS policy</a></label>
+  <br>
+  <input type="button" value="Submit" onclick="alert('Nigga thought we have server supporting LoL')">
+</body>
+
+</html>

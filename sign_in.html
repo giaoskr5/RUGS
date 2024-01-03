@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign in page</title>
+  <style>
+    #img {
+      display: none;
+    }
+
+    #imglab {
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    #balance {
+      width: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>sign in for <strong><a href="https://youtu.be/A9nvxjUi7Mo?si=lQfkGrSQrZMxq6j_&t=10"
+        target="_blank">RUGS</a></strong> &copy;</h1>
+
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td>
+        <input type="text" name="name">
+      </td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><input type="number" min="15" max="110"></td>
+    </tr>
+
+    <tr>
+      <td>Race:</td>
+      <td>
+        <select name="color" id="color">
+          <option value="ok" selected="selected">Normal</option>
+          <option value="!ok"> KFC enjoyer</option>
+          <option value="!ok"> no foreskin & love money</option>
+          <option value="!ok">calculator</option>
+          <option value="!ok">bomber</option>
+          <option value="!ok">taco drug</option>
+          <option value="!ok">microsoft scammer</option>
+          <option value="!ok">noob balkan & rush b idiot</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Favorite drinksters:</td>
+      <td>
+        <input type="checkbox" id="h2o" checked>
+        <label for="h2o">Water</label>
+
+        <input type="checkbox" id="coca">
+        <label for="coca">Coca-Cola</label>
+
+        <input type="checkbox" id="vergi">
+        <label for="vergi">Vodka</label>
+
+        <input type="checkbox" id="long">
+        <label for="long">Londrink</label>
+
+        <input type="checkbox" id="milk" onclick="alert('matrix')">
+        <label for="milk">Milk</label>
+
+        <input type="checkbox" id="bier">
+        <label for="bier">Beer</label>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>Home address:</td>
+      <td><input type="text">(we don't stalk, but be careful if you did something wrong)</td>
+    </tr>
+
+    <tr>
+      <td>Bank balance:</td>
+      <td><input type="number" id="balance">(We won't rob you)</td>
+    </tr>
+
+    <tr>
+      <td>Introduce yourself:</td>
+      <td> <textarea name="introduce" id="ind" cols="30" rows="10" placeholder="I can't write(default)"></textarea></td>
+    </tr>
+
+    <tr>
+      <td>Good selfie:</td>
+      <td>
+        <label for="img" id="imglab">
+          <div>Select image</div>
+        </label>
+        <input type="file" id="img">
+      </td>
+    </tr>
+
+  </table>
+  <input type="checkbox" checked id="right">
+  <label for="right">I've read the <a href="policy.txt" target="_blank">RUGS policy</a></label>
+  <br>
+  <input type="button" value="submit">
+</body>
+
+</html>
