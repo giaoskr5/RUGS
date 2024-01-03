@@ -1,0 +1,89 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 600px;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#balance {
+  width: 60%;
+  /* Adjusted width for balance input */
+}
+
+#ind {
+  resize: vertical;
+}
+
+#img {
+  display: none;
+}
+
+#imglab {
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#drinksters {
+  vertical-align: top;
+}
+
+#right {
+  margin-top: 10px;
+}
+
+input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #4CAF50;
+}
