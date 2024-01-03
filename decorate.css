@@ -40,7 +40,7 @@ input[type="checkbox"] {
 
 #balance {
   width: 60%;
-  /* Adjusted width for balance input */
+
 }
 
 #ind {
@@ -63,8 +63,14 @@ input[type="checkbox"] {
   display: inline-block;
 }
 
+#drink {
+  vertical-align: baseline;
+  /* text-align: center; */
+}
+
 #drinksters {
-  vertical-align: top;
+  vertical-align: center;
+
 }
 
 #right {
@@ -85,5 +91,5 @@ input[type="button"]:hover {
 }
 
 a {
-  color: #4CAF50;
+  color: #18447e;
 }

@@ -5,103 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign In Page</title>
-  <!-- <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    h1 {
-      color: #333;
-      text-decoration: underline;
-      margin-bottom: 20px;
-    }
-
-    table {
-      margin: 20px auto;
-      border-collapse: collapse;
-      width: 80%;
-      max-width: 600px;
-    }
-
-    td {
-      padding: 10px;
-      text-align: left;
-    }
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-      padding: 8px;
-      box-sizing: border-box;
-      margin-bottom: 10px;
-    }
-
-    input[type="checkbox"] {
-      margin-right: 5px;
-      vertical-align: middle;
-    }
-
-    #balance {
-      width: 60%;
-      /* Adjusted width for balance input */
-    }
-
-    #ind {
-      resize: vertical;
-    }
-
-    #img {
-      display: none;
-    }
-
-    #imglab {
-      font-style: normal;
-      font-weight: 700;
-      text-transform: uppercase;
-      cursor: pointer;
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px;
-      border-radius: 5px;
-      display: inline-block;
-    }
-
-    #drinksters {
-      vertical-align: top;
-    }
-
-    #right {
-      margin-top: 10px;
-    }
-
-    input[type="button"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    input[type="button"]:hover {
-      background-color: #45a049;
-    }
-
-    a {
-      color: #4CAF50;
-    }
-  </style> -->
   <link rel="stylesheet" href="decorate.css">
 </head>
 
 <body>
-  <h1>Sign In for <strong><a href="https://youtu.be/A9nvxjUi7Mo?si=lQfkGrSQrZMxq6j_&t=10"
-        target="_blank">RUGS</a></strong> &copy;</h1>
+  <h1>Sign In for <strong id="rugs"><a href="https://youtu.be/A9nvxjUi7Mo?si=lQfkGrSQrZMxq6j_&t=10" target="_blank">RUGS
+        &copy;</a></strong></h1>
 
   <table>
     <tr>
@@ -135,23 +44,33 @@
     <tr id="drinksters">
       <td>Favorite drinksters:</td>
       <td>
-        <input type="checkbox" id="h2o" checked>
-        <label for="h2o">Water</label>
+        <table id="drink">
+          <tr>
 
-        <input type="checkbox" id="coca">
-        <label for="coca">Coca-Cola</label>
-
-        <input type="checkbox" id="vergi">
-        <label for="vergi">Vodka</label>
-
-        <input type="checkbox" id="long">
-        <label for="long">Londrink</label>
-
-        <input type="checkbox" id="milk" onclick="alert('matrix')">
-        <label for="milk">Milk</label>
-
-        <input type="checkbox" id="bier">
-        <label for="bier">Beer</label>
+            <td><input type="checkbox" id="h2o" checked onclick="alert('matrix'); this.checked = true;"></td>
+            <td><label for="h2o">Water</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="coca"></td>
+            <td><label for="coca">Coca-Cola</label></td>
+          </tr>
+          <tr>
+            <td> <input type="checkbox" id="vergi"></td>
+            <td> <label for="vergi">Vodka</label></td>
+          </tr>
+          <tr>
+            <td> <input type="checkbox" id="long"></td>
+            <td> <label for="long">Londrink</label></td>
+          </tr>
+          <tr>
+            <td> <input type="checkbox" id="milk" onclick="alert('matrix'); this.checked = false;"></td>
+            <td> <label for="milk">Milk</label></td>
+          </tr>
+          <tr>
+            <td> <input type="checkbox" id="bier"></td>
+            <td> <label for="bier">Beer</label></td>
+          </tr>
+        </table>
       </td>
     </tr>
 
