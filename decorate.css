@@ -94,6 +94,15 @@ input[type="button"]:hover {
 
 }
 
+input:hover,
+textarea:hover {
+  background-color: #f7fff8;
+}
+
+select:hover {
+  background-color: #f3fff5;
+}
+
 #rugs {
   color: #18447e;
   /* text-decoration: none; */
@@ -191,7 +200,10 @@ input[type="button"]:hover {
   color: #364350;
 }
 
+
+
+
 input:focus,
 textarea:focus {
-  background-color: #f1fcf2;
+  background-color: #e8fdea;
 }
