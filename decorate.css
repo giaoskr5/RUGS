@@ -29,7 +29,7 @@ td {
 input,
 select,
 textarea {
-  width: 100%;
+  width: 105%;
   padding: 8px;
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -199,7 +199,6 @@ select:hover {
   background-color: #9db3cc;
   color: #364350;
 }
-
 
 
 
