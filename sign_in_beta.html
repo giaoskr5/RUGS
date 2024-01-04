@@ -9,100 +9,127 @@
 </head>
 
 <body>
-  <h1>Sign In for <strong id="rugs"><a href="https://youtu.be/A9nvxjUi7Mo?si=lQfkGrSQrZMxq6j_&t=10" target="_blank">RUGS
+  <h1>Sign In for <strong><a href="https://youtu.be/A9nvxjUi7Mo?si=lQfkGrSQrZMxq6j_&t=10" target="_blank" id="rugs">RUGS
         &copy;</a></strong></h1>
 
-  <table>
-    <tr>
-      <td>Name:</td>
-      <td>
-        <input type="text" name="name">
-      </td>
-    </tr>
-    <tr>
-      <td>Age:</td>
-      <td><input type="number" min="15" max="110"></td>
-    </tr>
+  <div>
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td>
+          <input type="text" name="name">
+        </td>
+      </tr>
+      <tr>
+        <td>Age:</td>
+        <td><input type="number" min="15" max="110"></td>
+      </tr>
 
-    <tr>
-      <td>Race:</td>
-      <td>
-        <select name="color" id="color">
-          <option value="ok" selected="selected">Normal</option>
-          <option value="!ok"> KFC enjoyer</option>
-          <option value="!ok"> no foreskin & love money</option>
-          <option value="!ok">calculator</option>
-          <option value="!ok">bomber</option>
-          <option value="!ok">taco drug</option>
-          <option value="!ok">microsoft scammer</option>
-          <option value="!ok">noob balkan & rush b idiot</option>
-          <option value="ok">Formula 1</option>
-        </select>
-      </td>
-    </tr>
+      <tr>
+        <td>Race:</td>
+        <td id="race">
+          <select name="color" id="color">
+            <option value="ok" selected="selected">Normal</option>
+            <option value="!ok"> KFC enjoyer</option>
+            <option value="!ok"> no foreskin & love money</option>
+            <option value="!ok">calculator</option>
+            <option value="!ok">bomber</option>
+            <option value="!ok">taco drug</option>
+            <option value="!ok">microsoft scammer</option>
+            <option value="!ok">noob balkan & rush b idiot</option>
+            <option value="ok">Formula 1</option>
+          </select>
+        </td>
+      </tr>
 
-    <tr id="drinksters">
-      <td>Favorite drinksters:</td>
-      <td>
-        <table id="drink">
-          <tr>
+      <tr id="drinksters">
+        <td>Favorite drinksters:</td>
+        <td class="drinkcheck">
 
-            <td><input type="checkbox" id="h2o" checked onclick="alert('matrix'); this.checked = true;"></td>
-            <td><label for="h2o">Water</label></td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" id="coca"></td>
-            <td><label for="coca">Coca-Cola</label></td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" id="vergi"></td>
-            <td> <label for="vergi">Vodka</label></td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" id="long"></td>
-            <td> <label for="long">Londrink</label></td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" id="milk" onclick="alert('matrix'); this.checked = false;"></td>
-            <td> <label for="milk">Milk</label></td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" id="bier"></td>
-            <td> <label for="bier">Beer</label></td>
-          </tr>
-        </table>
-      </td>
-    </tr>
+          <label class="container">Water
+            <input type="checkbox" checked onclick="alert('matrix'); this.checked = true;">
+            <span class="checkmark"></span>
+          </label>
 
-    <tr>
-      <td>Home address:</td>
-      <td><input type="text" placeholder="(we don't stalk, but be careful if you did something wrong)"></td>
-    </tr>
 
-    <tr>
-      <td>Bank balance:</td>
-      <td><input type="number" id="balance" placeholder="(We won't rob you)"></td>
-    </tr>
 
-    <tr>
-      <td>Introduce yourself:</td>
-      <td><textarea name="introduce" id="ind" cols="30" rows="10" placeholder="I can't write(default)"></textarea></td>
-    </tr>
+          <label class="container">Coca-Cola
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
 
-    <tr>
-      <td>Good selfie:</td>
-      <td>
-        <label for="img" id="imglab">
-          <div>Select image</div>
-        </label>
-        <input type="file" id="img">
-      </td>
-    </tr>
-  </table>
 
-  <input type="checkbox" checked id="right">
-  <label for="right">I've read the <a href="policy.txt" target="_blank">RUGS policy</a></label>
-  <br>
+
+          <label class="container">Vodka
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+
+          <label class="container">Londrink
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+
+
+          <label class="container">Milk
+            <input type="checkbox" onclick="alert('matrix'); this.checked = false;">
+            <span class="checkmark"></span>
+          </label>
+
+
+
+          <label class="container">Beer
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Home address:</td>
+        <td><input type="text" placeholder="(we don't stalk, but be careful if you did something wrong)"></td>
+      </tr>
+
+      <tr>
+        <td>Bank balance:</td>
+        <td><input type="number" id="balance" placeholder="(We won't rob you)"></td>
+      </tr>
+
+      <tr>
+        <td>Introduce yourself:</td>
+        <td><textarea name="introduce" id="ind" cols="30" rows="10" placeholder="I can't write(default)"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Good selfie:</td>
+        <td>
+          <label for="img" id="imglab">
+            <div id="selectimage">Select image</div>
+          </label>
+          <input type="file" id="img">
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" id="pol">
+          <label class="container">I've read the <a href="policy.txt" target="_blank" class="policy">RUGS policy</a>
+            <input type="checkbox" checked>
+            <span class="checkmark"></span>
+          </label>
+
+        </td>
+      </tr>
+    </table>
+
+
+
+
+
+    <br>
+  </div>
   <input type="button" value="Submit" onclick="alert('Nigga thought we have server supporting LoL')">
 </body>
 
