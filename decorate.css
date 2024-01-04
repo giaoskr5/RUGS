@@ -190,3 +190,8 @@ input[type="button"]:hover {
   background-color: #9db3cc;
   color: #364350;
 }
+
+input:focus,
+textarea:focus {
+  background-color: #f1fcf2;
+}
