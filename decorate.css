@@ -6,12 +6,13 @@ body {
   text-align: center;
   font-size: 17px;
   text-transform: capitalize;
+  list-style: none;
 }
 
 h1 {
   color: #222222;
   text-decoration: underline;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
 table {
@@ -42,7 +43,6 @@ input[type="checkbox"] {
 
 #balance {
   width: 60%;
-
 }
 
 
@@ -62,13 +62,6 @@ input[type="checkbox"] {
   border-radius: 5px;
   display: inline-block;
 }
-
-
-
-/* #drink {
-  vertical-align: baseline;
-  text-align: center; 
- }*/
 
 
 #drinksters {
@@ -205,4 +198,8 @@ select:hover {
 input:focus,
 textarea:focus {
   background-color: #e8fdea;
+}
+
+#pol {
+  padding-left: 12em;
 }
